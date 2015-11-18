@@ -112,6 +112,7 @@ a:hover, a:active, a:focus {
     line-height: 14px;
 }
 
+
 /**** Main ****/
 
 main {
@@ -546,7 +547,6 @@ p {
 
 /**** Hobbies ****/
 
-
 #hobbies{
   text-align: center;
   height: 100%;
@@ -565,7 +565,6 @@ p {
 #hobbies p{
   margin: 10%;
 }
-
 
 #square1, #square2, #square3{
   height: 100%;
@@ -593,8 +592,6 @@ p {
 #square3{
   background: url(../img/games.jpg); 
 }
-
-
 
 #square1:hover, #square2:hover, #square3:hover {
   filter: grayscale(0);

@@ -558,7 +558,7 @@ p {
   font-size: 80px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 40%; 
+  margin-top: 10%; 
   text-shadow: 2px 2px 3px #111;
 }
 
@@ -568,21 +568,17 @@ p {
 
 #square1, #square2, #square3{
   height: 100%;
+  width: 100%;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
   -moz-filter: grayscale(1);
   -o-filter: grayscale(1);
   -ms-filter: grayscale(1);
   border: 2px solid #E1E1E1;
-  bord
-  margin:0;
-  padding:0;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
 }
 
 #square1{
-  background: url(../img/guitar.jpg); 
+  background: url(../img/guitar.jpg);
 }
 
 #square2{
@@ -600,3 +596,33 @@ p {
   -o-filter: grayscale(0);
   -ms-filter: grayscale(0);
 } 
+
+
+/**** Video font ****/
+
+
+.header-unit {
+  height: 150px;
+  border: 2px solid #000;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+}
+#video-container {
+  position: absolute;
+}
+#video-container {
+  top:0%;
+  left:0%;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+video {
+  position:absolute;
+  z-index:0;
+}
+video.fillWidth {
+  width: 100%;
+}

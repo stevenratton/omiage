@@ -32,7 +32,7 @@
             <script type='text/javascript'>
             $(function(){ 
                 $(window).scroll(function () {//Au scroll dans la fenetre on déclenche la fonction 
-                    if ($(this).scrollTop() > 999) { //si on a défilé de plus de 974px du haut vers le bas 
+                    if ($(this).scrollTop() > 974) { //si on a défilé de plus de 974px du haut vers le bas 
                         $('#navigation-sticky-wrapper').addClass("fixed"); 
                         $('#navigation').addClass("fixed");
                     } else { 
@@ -61,7 +61,7 @@
 
                 <h3>(MIAGE Bordeaux)<h3>
 
-                <a href="#presentation" class="newave-button large outline white">Tell me more</a>
+                <a href="#navigation-sticky-wrapper" class="newave-button large outline white">Tell me more</a>
 
                 <div id="separate"></div>
                 
@@ -70,25 +70,28 @@
 
             <div id="navigation-sticky-wrapper" class="sticky-wrapper" style="height: 45px;">
                     <div id="navigation" class="navbar navbar-fixed-top">
-                        <div class="navbar-inner">
-                            <div class="no-padding">
-                        
-                                <a class="show-menu" data-toggle="collapse" data-target=".nav-collapse">
-                                    <span class="show-menu-bar"></span>
-                                </a>
-                            
-                                <div class="navbar-collapse">
-                                    <ul class="nav">
-                                        <li class="menu-1 active"><a class="colapse-menu1" href="#home">Home</a></li>
-                                        <li class="menu-2"><a class="colapse-menu1" href="#presentation">About</a></li>
-                                        <li class="menu-3"><a class="colapse-menu1" href="#portfolio">Portfolio</a></li>
-                                        <li class="menu-5"><a class="colapse-menu1" href="#hobbies">Hobbies</a></li>
-                                        <li class="menu-6"><a class="colapse-menu1" href="#objective">Objective</a></li>
-                                    </ul>
-                                </div>
 
-                            </div>
-                        </div>
+                        
+
+								 <div class="panel-group">
+								  <div class="panel panel-default">
+								    <div class="panel-heading">
+								      <h4 class="panel-title">
+								        <a data-toggle="collapse" href="#collapse1">Menu</a>
+								      </h4>
+								    </div>
+								    <div id="collapse1" class="panel-collapse collapse">
+								        <ul class="nav">
+	                                        <li class="menu-1 active"><a class="colapse-menu1" href="#home">Home</a></li>
+	                                        <li class="menu-2"><a class="colapse-menu1" href="#presentation">About</a></li>
+	                                        <li class="menu-3"><a class="colapse-menu1" href="#portfolio">Portfolio</a></li>
+	                                        <li class="menu-5"><a class="colapse-menu1" href="#hobbies">Hobbies</a></li>
+	                                        <li class="menu-6"><a class="colapse-menu1" href="#objective">Objective</a></li>
+                                    	</ul>
+								    </div>
+								  </div>
+								</div>
+
                     </div>
             </div>
 
@@ -615,19 +618,35 @@
             </section>
 
 <!-- PARTIE 3 -->
+
+
+				<div class="header-unit">
+					<div id="video-container">
+						<video autoplay loop class="fillWidth">
+							<source src="./video/fvpa.mp4" type="video/mp4"/>
+							<source src="./video/fvpa.ogg" type="video/ogg"/>
+							<source src="./video/fvpa.webm" type="video/webm"/>
+							Your browser does not support the video tag. I suggest you upgrade your browser.
+						</video>
+					</div>
+				</div>
+
             <section id="hobbies">
-                <div id="square1" class="col-sm-4">
+<!--
+                <div id="square1" class="col-sm-1">
                     <h2>Music</h2>
                     <p>I play guitar since I'm a teen, a lot of music styles  influenced me through all periods of my life</p>
                 </div>
-                <div id="square2" class="col-sm-4">
+                <div id="square2" class="col-sm-1">
                     <h2>Sports</h2>
                     <p>I am really fan of sports, all kind, specially football (soccer) and Volleyball which I play since I was young. I also watch Rugby, Tennis, athletics, etc...</p>
                 </div>
-                <div id="square3" class="col-sm-4">
+                <div id="square3" class="col-sm-1">
                     <h2>Video games</h2>
                     <p>Playing is a good way to escape. I love being in competition, strategy is what I prefer to make !</p>
                 </div>
+-->
+
             </section>
 
             <section id="objective">

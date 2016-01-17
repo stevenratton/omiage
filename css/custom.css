@@ -190,6 +190,7 @@ section {
 }
 
 #objective {
+  top: 0px;
   background-color: #E1E1E1;
   height: 900px;
 }
@@ -568,7 +569,7 @@ p {
   margin: auto;
 }
 
-#square1, #square2, #square3{
+#square1{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -580,7 +581,7 @@ p {
   border: 2px solid #E1E1E1;
 }
 
-#square1:hover, #square2:hover, #square3:hover {
+#square1:hover{
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -589,31 +590,28 @@ p {
 } 
 
 
-/**** Video font ****/
+/**** Videos hobbies ****/
 
 
-.header-unit {
+.header-unit{
   width: 100%;
   height: 110%;
   position: relative;
 
 }
 
-.header-unit:hover {
-
-} 
-
-
-#video-container {
+#video-container{
   top:0%;
   left:0%;
   height:100%;
   width:100%;
   overflow: hidden;
 }
-video {
+
+video{
   z-index:0;
 }
-video.fillWidth {
+
+video.fillWidth{
   width: 100%;
 }

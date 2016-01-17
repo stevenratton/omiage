@@ -564,8 +564,8 @@ p {
 #hobbies h3{
   font-size: 24px;
   text-transform: uppercase;
-  padding-right: 290px;
-  padding-left: 290px;
+  width: 70%;
+  margin: auto;
 }
 
 #square1, #square2, #square3{

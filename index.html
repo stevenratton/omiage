@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html>
+    <html id="homehtml">
         <head>
             <meta name="description" content="Steven Ratton's personnel website">
             <meta name="author" content="Steven Ratton">
@@ -32,7 +32,7 @@
             <script type='text/javascript'>
             $(function(){ 
                 $(window).scroll(function () {//Au scroll dans la fenetre on déclenche la fonction 
-                    if ($(this).scrollTop() > 974) { //si on a défilé de plus de 974px du haut vers le bas 
+                    if ($(this).scrollTop() > 1050) { //si on a défilé de plus de 974px du haut vers le bas 
                         $('#navigation-sticky-wrapper').addClass("fixed"); 
                         $('#navigation').addClass("fixed");
                     } else { 
@@ -48,6 +48,11 @@
         </head>
 
         <body>
+
+        	<div id="no-screen">
+        		<p>Résolution non supportée</p>
+        	</div>
+
             <div id="home">
 
                 <div id="separate"></div>
@@ -58,60 +63,55 @@
                 <p>Web development<span class="bullet">•</span>Web Design<span class="bullet">•</span>Software<span class="bullet">•</span>Hardware</p>
 
                 <h2>License's student in Master's degree in Business Informatics</h2>
-
-                <h3>(MIAGE Bordeaux)<h3>
+                <h3>(MIAGE Bordeaux)</h3>
 
                 <a href="#navigation-sticky-wrapper" class="newave-button large outline white">Tell me more</a>
 
                 <div id="separate"></div>
+
+                <img src="./img/down.png">
                 
             </div>
 
 
-            <div id="navigation-sticky-wrapper" class="sticky-wrapper" style="height: 45px;">
+            <div id="navigation-sticky-wrapper" class="sticky-wrapper" >
                     <div id="navigation" class="navbar navbar-fixed-top">
-
-                        
-
-								 <div class="panel-group">
-								  <div class="panel panel-default">
-								    <div class="panel-heading">
-								      <h4 class="panel-title">
-								        <a data-toggle="collapse" href="#collapse1">Menu</a>
-								      </h4>
-								    </div>
-								    <div id="collapse1" class="panel-collapse collapse">
-								        <ul class="nav">
-	                                        <li class="menu-1 active"><a class="colapse-menu1" href="#home">Home</a></li>
-	                                        <li class="menu-2"><a class="colapse-menu1" href="#presentation">About</a></li>
-	                                        <li class="menu-3"><a class="colapse-menu1" href="#portfolio">Portfolio</a></li>
-	                                        <li class="menu-5"><a class="colapse-menu1" href="#hobbies">Hobbies</a></li>
-	                                        <li class="menu-6"><a class="colapse-menu1" href="#objective">Objective</a></li>
-                                    	</ul>
-								    </div>
-								  </div>
-								</div>
-
+						    <div class="card-header">
+						        <a data-toggle="collapse" href="#collapse1">Menu</a>
+						    </div>
+						    <div id="collapse1" class="panel-collapse collapse">
+						        <ul class="nav">
+                                    <li class="menu-1 active"><a class="colapse-menu1" href="#homehtml">Home</a></li>
+                                    <li class="menu-2"><a class="colapse-menu1" href="#presentation">About</a></li>
+                                    <li class="menu-3"><a class="colapse-menu1" href="#folio">Portfolio</a></li>
+                                    <li class="menu-5"><a class="colapse-menu1" href="#hobbies">Hobbies</a></li>
+                                    <li class="menu-6"><a class="colapse-menu1" href="#objective">Objective</a></li>
+                            	</ul>
+							</div>
                     </div>
             </div>
 
             <section id="about">
-                 <div class="parallax-overlay">
+                <div class="parallax-overlay">
 
                     <div id="presentation">
                         <p>
-                        Hi! I'm Steven, a French student who loves coding or managing interesting projects, creating graphic picture, logo or flyer but also movie maker.
+                        Hi ! I'm Steven, a French student who loves managing interesting projects, creating graphic picture, logo or flyer but also movie maker.
                         </p>
                         <p>
                         I'm following a French Master's Programme with a major in Business and a minor in Informatics.
                         </p>
                         <p>
-                        Last summer I worked in <a target="_blank" href="http://en.wikipedia.org/wiki/French_Institute_for_Research_in_Computer_Science_and_Automation">French National Institute for computer science and applied mathematics (INRIA)</a> with a research team name <a target="_blank" href="https://team.inria.fr/potioc/">POTIOC</a> and created new logo's team and worked on dice game in augmented reality:
+						Currently in second year of Master's <a target="_blank" href="https://miage-bordeaux.fr/">MIAGE (University of Bordeaux)</a> work study contract in <a target="_blank" href="http://www.sqli.com/">SQLI</a>, I practice test in an Agile Scrum team.
+                        In 2014, I worked in <a target="_blank" href="http://en.wikipedia.org/wiki/French_Institute_for_Research_in_Computer_Science_and_Automation">French National Institute for computer science and applied mathematics (INRIA)</a> with a research team name <a href="https://team.inria.fr/potioc/">POTIOC</a> and created new logo's team and worked on dice game in augmented reality.
                         <p>
-                        You can look at some of my works on my <a target="_blank" href="/">portfolio</a>. My resume is available <a target="_blank" href="/">here</a>, I'm also on <a target="_blank" href="https://fr.linkedin.com/pub/steven-ratton/66/915/a82">LinkedIn</a>.
+                        Today, e-sport is growing and I participated in many e-sport adventures since my childhood (<a href="http://www.millenium.org/">Millenium</a>, <a href="http://cooldown.fr/">Cooldown</a>, ...). I can help e-sport project to see the day for compagny or individual, today it's time to grow the esport in France !
                         </p>
                         <p>
-                        Feel free to <a target="_blank" href="/">contact me</a>,
+                        You can look at some of my works on my <a target="_blank" href="#portfolio">Portfolio</a>. My resume is available and I'm also on <a target="_blank" href="https://fr.linkedin.com/pub/steven-ratton/66/915/a82">LinkedIn</a>.
+                        </p>
+                        <p>
+                        Feel free to contact me,
                         </p>
                     </div> 
 
@@ -121,8 +121,8 @@
                         - OR -
                         </p>
 
-                        <a class="newave-button medium grey " href="./img/CV_FR_RATTON_Steven.pdf" target="_blank">Download my CV (FR Version)</a>
-                        <a class="newave-button medium grey " href="./img/CV_EN_RATTON_Steven.pdf" target="_blank">Download my CV (EN Version)</a>
+						<a class="newave-button medium grey " href="./img/CV_FR_RATTON_Steven.pdf" target="_blank">Download my French CV</a>
+                        <a class="newave-button medium grey " href="./img/CV_EN_RATTON_Steven.pdf" target="_blank">Download my English CV</a>
 
                     </div> 
                     
@@ -136,123 +136,83 @@
                     <h1>Portfolio</h1>
                     <span class="border"></span>
 
-
                     <h2>Gaming Logos</h2>
-
-                    <div class="container">
-                        <div class="switch">
-                            <div class="switch-back"></div>
-
-                            <input type="radio" class="switch-input" name="switch" value="off" id="off1" checked>
-                            <label for="off1" class="switch-label-left switch-label-off" onclick="javascript:afficher_cacher('cache1');"><span>Off</span></label>
-                            <div class="label-off"><div>off</div></div>
-
-                            <input type="radio" class="switch-input" name="switch" value="on" id="on1" >
-                            <label for="on1" class="switch-label-right switch-label-on" onclick="javascript:afficher_cacher('cache1');"><span>On</span></label>
-                            <div class="label-on"><div>on</div></div>
-
-                            <span class="switch-selection"></span>
-                      </div>
-                    </div>
 
                     <div id="cache1" class="cache1">
 
-                        <div id="slider-img1" class="carousel slide" data-ride="carousel">
-                   
-                                <ol class="carousel-indicators">
-                                    <li class="active"  data-slide-to="0" data-target="#slider-img1"></li>
-                                    <li class="" data-slide-to="1" data-target="#slider-img1"></li>
-                                    <li class="" data-slide-to="2" data-target="#slider-img1"></li>
-                                    <li class="" data-slide-to="3" data-target="#slider-img1"></li>
-                                    <li class="" data-slide-to="4" data-target="#slider-img1"></li>
-                                    <li class="" data-slide-to="5" data-target="#slider-img1"></li>
-                                    <li class="" data-slide-to="6" data-target="#slider-img1"></li>
-                                    <li class="" data-slide-to="7" data-target="#slider-img1"></li>
-                                </ol>
+                    	<div class="col-sm-6" id="bloc-image">
+                            <div id="information">
+                                <h5>2017</h5>
+                                <img alt="" src="img/separate.png" />
+                                <h5>ESCP</h5>
+                            </div>
+                            <div id="logoPortfolio">
+                                <img alt="" src="./img/escp.png" />
+                            </div>
+                            <div id="textPortfolio">
+                                    <h4>E-sport competition website</h4>
+                            </div>
+                        </div>
 
-
-                                <div id="test" class="carousel-inner" role="listbox">
-                                	<div class="item active">
-                                        <img alt="fvpa" src="./img/fvpa.png"></img>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="fvpafull" src="./img/fvpafull.png"></img>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="omage" src="./img/omage.png"></img>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="obstruxion" src="./img/obstruxion.png"></img>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="redpanthera" src="./img/redpanthera.png"></img>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="hazeryon" src="./img/hazeryon.png"></img>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="piratebay" src="./img/piratebay.png"></img>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="elysium" src="./img/elysium.png"></img>
-                                    </div>
-                                </div>
-                            
-                                <a class="left carousel-control" data-slide="prev" role="button" href="#slider-img1">
-                                    <span class="fa fa-chevron-left"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="right carousel-control" data-slide="next" role="button" href="#slider-img1">
-                                    <span class="fa fa-chevron-right"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                        <div class="col-sm-6" id="bloc-image">
+                            <div id="information">
+                                <h5>2017</h5>
+                                <img alt="" src="img/separate.png" />
+                                <h5>Project 5 e-sport</h5>
+                            </div>
+                            <div id="logoPortfolio">
+                                <img alt="" src="./img/p5.png" />
+                            </div>
+                            <div id="textPortfolio">
+                                    <h4>E-sport team</h4>
+                            </div>
                         </div>
 
                         <div class="col-sm-6" id="bloc-image">
                             <div id="information">
                                 <h5>2015</h5>
                                 <img alt="" src="img/separate.png" />
-                                <h5>FVPA</h5>
+                                <h5>Fifa Virtual Pro Association</h5>
                             </div>
                             <div id="logoPortfolio">
                                 <img alt="" src="./img/fvpa.png" />
                             </div>
                             <div id="textPortfolio">
-                                <h4>Association</h4>
-                            </div>
-                        </div>
-
-						<div class="col-sm-6" id="bloc-image">
-                            <div id="information">
-                                <h5>2015</h5>
-                                <img alt="" src="img/separate.png" />
-                                <h5>International FVPA</h5>
-                            </div>
-                            <div id="logoPortfolio">
-                                <img alt="" src="./img/fvpafull.png" />
-                            </div>
-                            <div id="textPortfolio">
-                                <h4>Nations FVPA</h4>
-                            </div>
-                        </div>
-
-						<div class="col-sm-6" id="bloc-image">
-                            <div id="information">
-                                <h5>2015</h5>
-                                <img alt="" src="img/separate.png" />
-                                <h5>OMage</h5>
-                            </div>
-                            <div id="logoPortfolio">
-                                <img alt="" src="./img/omage.png" />
-                            </div>
-                            <div id="textPortfolio">
-                                <h4>Hitbox Channel</h4>
+                                    <h4>E-sport competition website</h4>
                             </div>
                         </div>
 
                         <div class="col-sm-6" id="bloc-image">
                             <div id="information">
                                 <h5>2015</h5>
+                                <img alt="" src="img/separate.png" />
+                                <h5>FVPA community</h5>
+                            </div>
+                            <div id="logoPortfolio">
+                                <img alt="" src="./img/fvpafull.png" />
+                            </div>
+                            <div id="textPortfolio">
+                                    <h4>E-sport competition website</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6" id="bloc-image">
+                            <div id="information">
+                                <h5>2015</h5>
+                                <img alt="" src="img/separate.png" />
+                                <h5>OMiage</h5>
+                            </div>
+                            <div id="logoPortfolio">
+                                <img alt="" src="./img/omiage.png" />
+                            </div>
+                            <div id="textPortfolio">
+                                    <h4>Web TV</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6" id="bloc-image">
+                            <div id="information">
+                                <h5>2014</h5>
                                 <img alt="" src="img/separate.png" />
                                 <h5>Obstruxion</h5>
                             </div>
@@ -260,13 +220,13 @@
                                 <img alt="" src="./img/obstruxion.png" />
                             </div>
                             <div id="textPortfolio">
-                                <h4>Team</h4>
+                                    <h4>E-sport team</h4>
                             </div>
                         </div>
 
                         <div class="col-sm-6" id="bloc-image">
                             <div id="information">
-                                <h5>2015</h5>
+                                <h5>2014</h5>
                                 <img alt="" src="img/separate.png" />
                                 <h5>Red Panthera</h5>
                             </div>
@@ -274,13 +234,13 @@
                                 <img alt="" src="./img/redpanthera.png" />
                             </div>
                             <div id="textPortfolio">
-                                <h4>Team</h4>
+                                    <h4>E-sport team</h4>
                             </div>
                         </div>
 
                         <div class="col-sm-6" id="bloc-image">
                             <div id="information">
-                                <h5>2014</h5>
+                                <h5>2013</h5>
                                 <img alt="" src="img/separate.png" />
                                 <h5>Hazeryon</h5>
                             </div>
@@ -288,13 +248,13 @@
                                 <img alt="" src="./img/hazeryon.png" />
                             </div>
                             <div id="textPortfolio">
-                                <h4>Team</h4>
+                                    <h4>E-sport team</h4>
                             </div>
                         </div>
 
                         <div class="col-sm-6" id="bloc-image">
                             <div id="information">
-                                <h5>2014</h5>
+                                <h5>2013</h5>
                                 <img alt="" src="img/separate.png" />
                                 <h5>Pirate Bay</h5>
                             </div>
@@ -302,9 +262,10 @@
                                 <img alt="" src="./img/piratebay.png" />
                             </div>
                             <div id="textPortfolio">
-                                <h4>Team</h4>
+                                    <h4>E-sport team</h4>
                             </div>
                         </div>
+
                         <div class="col-sm-6" id="bloc-image">
                             <div id="information">
                                 <h5>2013</h5>
@@ -315,12 +276,11 @@
                                 <img alt="" src="./img/elysium.png" />
                             </div>
                             <div id="textPortfolio">
-                                <h4>Website</h4>
+                                    <h4>E-sport team</h4>
                             </div>
                         </div>
-                    </div>
 
-                    <script type="text/javascript">afficher_cacher('cache1');</script>
+                    </div>
                 </div>        
 
 
@@ -329,73 +289,27 @@
                     <h2>Company Logos</h2>
 
                     <div class="container">
-                        <div class="switch">
-                            <div class="switch-back"></div>
-
-                                <input type="radio" class="switch-input" name="switch2" value="off" id="off2" checked>
-                                <label for="off2" class="switch-label-left switch-label-off" onclick="javascript:afficher_cacher('cache2');"><span>Off</span></label>
-                                <div class="label-off"><div>off</div></div>
-                                
-                                <input type="radio" class="switch-input" name="switch2" value="on" id="on2">
-                                <label for="on2" class="switch-label-right switch-label-on" onclick="javascript:afficher_cacher('cache2');"><span>On</span></label>
-                                <div class="label-on"><div>on</div></div>
-
-                                <span class="switch-selection"></span>
-
-                            </div>
-                        </div>
 
                         <div id="cache2" class="cache2">
-
-                            <div id="slider-img2" class="carousel slide" data-ride="carousel">
-                       
-                                    <ol class="carousel-indicators">
-                                        <li class="active" data-slide-to="0" data-target="#slider-img2"></li>
-                                        <li  class="" data-slide-to="1" data-target="#slider-img2"></li>
-                                    </ol>
-
-
-                                    <div id="test" class="carousel-inner" role="listbox">
-
-                                        <div class="item active">
-                                            <img alt="potioc" src="./img/potioc.png"></img>
-                                        </div>
-                                        <div class="item">
-                                            <img alt="ajldiffusion" src="./img/ajldiffusion.png"></img>
-                                        </div>
-
-                                    </div>
-                                
-                                    <a class="left carousel-control" data-slide="prev" role="button" href="#slider-img2">
-                                        <span class="fa fa-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    
-                                    <a class="right carousel-control" data-slide="next" role="button" href="#slider-img2">
-                                            <span class="fa fa-chevron-right"></span>
-                                            <span class="sr-only">Next</span>
-                                    </a>
-
-                            </div>
 
                             <div class="col-sm-6" id="bloc-image">
                                 <div id="information">
                                     <h5>2014</h5>
                                     <img alt="" src="img/separate.png" />
-                                    <h5>INRIA Potioc</h5>
+                                    <h5>Potioc</h5>
                                 </div>
                                 <div id="logoPortfolio">
                                     <img alt="" src="./img/potioc.png" />
                                 </div>
                                  <div id="textPortfolio">
-                                        <h4>INRIA Team</h4>
+                                        <h4>INRIA</h4>
                                 </div>
                             </div>
                             <div class="col-sm-6" id="bloc-image">
                                 <div id="information">
                                     <h5>2013</h5>
                                     <img alt="" src="img/separate.png" />
-                                    <h5>Ajl Diffusion</h5>
+                                    <h5>AJL Diffusion</h5>
                                 </div>
                                 <div id="logoPortfolio">
                                     <img alt="" src="./img/ajldiffusion.png" />
@@ -406,8 +320,6 @@
                             </div>
                         </div>
 
-                        <script type="text/javascript">afficher_cacher('cache2');</script>
-
                     </div>             
                 </div>
 
@@ -417,77 +329,77 @@
                     <h2>Flyers</h2>
 
                     <div class="container">
-                        <div class="switch">
-                            <div class="switch-back"></div>
-
-                                <input type="radio" class="switch-input" name="switch3" value="off" id="off3" checked>
-                                <label for="off3" class="switch-label-left switch-label-off" onclick="javascript:afficher_cacher('cache3');"><span>Off</span></label>
-                                <div class="label-off"><div>off</div></div>
-                                
-                                <input type="radio" class="switch-input" name="switch3" value="on" id="on3">
-                                <label for="on3" class="switch-label-right switch-label-on" onclick="javascript:afficher_cacher('cache3');"><span>On</span></label>
-                                <div class="label-on"><div>on</div></div>
-
-                                <span class="switch-selection"></span>
-
-                            </div>
-                        </div>
 
                         <div id="cache3" class="cache3">
 
-                            <div id="slider-img3" class="carousel slide" data-ride="carousel">
-                       
-                                    <ol class="carousel-indicators">
-                                        <li class="active" data-slide-to="0" data-target="#slider-img3"></li>
-                                        <li  class="" data-slide-to="1" data-target="#slider-img3"></li>
-                                        <li  class="" data-slide-to="2" data-target="#slider-img3"></li>
-                                        <li  class="" data-slide-to="3" data-target="#slider-img3"></li>
-                                        <li  class="" data-slide-to="4" data-target="#slider-img3"></li>
-                                        <li  class="" data-slide-to="5" data-target="#slider-img3"></li>
-                                        <li  class="" data-slide-to="6" data-target="#slider-img3"></li>
-                                        <li  class="" data-slide-to="7" data-target="#slider-img3"></li>
-                                    </ol>
+                        	<div class="col-sm-6" id="bloc-image">
+                                <div id="information">
+                                    <h5>2017</h5>
+                                    <img alt="" src="img/separate.png" />
+                                    <h5>GALA AMB</h5>
+                                </div>
+                                <div id="logoPortfolio">
+                                    <img alt="" src="./img/galaMIAGE.png" />
+                                </div>
+                                 <div id="textPortfolio">
+                                        <h4>Association Miage Bordeaux</h4>
+                                </div>
+                            </div>
 
+							<div class="col-sm-6" id="bloc-image">
+                                <div id="information">
+                                    <h5>2017</h5>
+                                    <img alt="" src="img/separate.png" />
+                                    <h5>GALA AMB cocktails</h5>
+                                </div>
+                                <div id="logoPortfolio">
+                                    <img alt="" src="./img/cocktails.png" />
+                                </div>
+                                 <div id="textPortfolio">
+                                        <h4>Association Miage Bordeaux</h4>
+                                </div>
+                            </div>
 
-                                    <div id="test" class="carousel-inner" role="listbox">
+                            <div class="col-sm-6" id="bloc-image">
+                                <div id="information">
+                                    <h5>2017</h5>
+                                    <img alt="" src="img/separate.png" />
+                                    <h5>BBQ AMB</h5>
+                                </div>
+                                <div id="logoPortfolio">
+                                    <img alt="" src="./img/bbq.png" />
+                                </div>
+                                 <div id="textPortfolio">
+                                        <h4>Association Miage Bordeaux</h4>
+                                </div>
+                            </div>
 
-                                        <div class="item active">
-                                            <img alt="abei" src="./img/lastnight.png"></img>
-                                        </div>
-                                        <div class="item">
-                                            <img alt="ajldiffusion" src="./img/icemusik.png"></img>
-                                        </div>
-                                        <div class="item">
-                                            <img alt="perso" src="./img/personalcover.png"></img>
-                                        </div>
-                                        <div class="item">
-                                            <img alt="ajldiffusion" src="./img/gala.png"></img>
-                                        </div>
-                                        <div class="item">
-                                            <img alt="jcc" src="./img/walydia.png"></img>
-                                        </div>
-                                        <div class="item">
-                                            <img alt="ajldiffusion" src="./img/djmat.png"></img>
-                                        </div>
-                                        <div class="item">
-                                            <img alt="perso2" src="./img/anniversaire.png"></img>
-                                        </div>
-                                        <div class="item">
-                                            <img alt="perso3" src="./img/karaoke.png"></img>
-                                        </div>
+                            <div class="col-sm-6" id="bloc-image">
+                                <div id="information">
+                                    <h5>2016</h5>
+                                    <img alt="" src="img/separate.png" />
+                                    <h5>Integration AMB Night</h5>
+                                </div>
+                                <div id="logoPortfolio">
+                                    <img alt="" src="./img/integration.png" />
+                                </div>
+                                 <div id="textPortfolio">
+                                        <h4>Association Miage Bordeaux</h4>
+                                </div>
+                            </div>
 
-                                    </div>
-                                
-                                    <a class="left carousel-control" data-slide="prev" role="button" href="#slider-img3">
-                                        <span class="fa fa-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    
-                                    <a class="right carousel-control" data-slide="next" role="button" href="#slider-img3">
-                                            <span class="fa fa-chevron-right"></span>
-                                            <span class="sr-only">Next</span>
-                                    </a>
-
+                            <div class="col-sm-6" id="bloc-image">
+                                <div id="information">
+                                    <h5>2016</h5>
+                                    <img alt="" src="img/separate.png" />
+                                    <h5>Féria de la Victoire 2016</h5>
+                                </div>
+                                <div id="logoPortfolio">
+                                    <img alt="" src="./img/feria.png" />
+                                </div>
+                                 <div id="textPortfolio">
+                                        <h4>Association Miage Bordeaux</h4>
+                                </div>
                             </div>
 
                             <div class="col-sm-6" id="bloc-image">
@@ -500,7 +412,7 @@
                                     <img alt="" src="./img/lastnight.png" />
                                 </div>
                                  <div id="textPortfolio">
-                                        <h4>Association étudiante</h4>
+                                        <h4>Student association</h4>
                                 </div>
                             </div>
                             <div class="col-sm-6" id="bloc-image">
@@ -513,7 +425,7 @@
                                     <img alt="" src="./img/icemusik.png" />
                                 </div>
                                  <div id="textPortfolio">
-                                        <h4>Association étudiante</h4>
+                                        <h4>Student association</h4>
                                 </div>
                             </div>
                             <div class="col-sm-6" id="bloc-image">
@@ -539,7 +451,7 @@
                                     <img alt="" src="./img/gala.png" />
                                 </div>
                                  <div id="textPortfolio">
-                                        <h4>Association étudiante</h4>
+                                        <h4>Student association</h4>
                                 </div>
                             </div>
                             <div class="col-sm-6" id="bloc-image">
@@ -581,22 +493,8 @@
                                         <h4>Birthday Flyer</h4>
                                 </div>
                             </div>
-                            <div class="col-sm-6" id="bloc-image">
-                                <div id="information">
-                                    <h5>2011</h5>
-                                    <img alt="" src="img/separate.png" />
-                                    <h5>Karaoke Party</h5>
-                                </div>
-                                <div id="logoPortfolio">
-                                    <img alt="" src="./img/karaoke.png" />
-                                </div>
-                                 <div id="textPortfolio">
-                                        <h4>Night Flyer</h4>
-                                </div>
-                            </div>
+                           
                         </div>
-
-                        <script type="text/javascript">afficher_cacher('cache3');</script>
 
                     </div>             
                 </div>
@@ -607,23 +505,50 @@
                     <h2>Movies</h2>
 
                     <div class="container">
-                        <div class="switch">
-                            <div class="switch-back"></div>
-
-                                <input type="radio" class="switch-input" name="switch4" value="off" id="off4" checked>
-                                <label for="off4" class="switch-label-left switch-label-off" onclick="javascript:afficher_cacher('cache4');"><span>Off</span></label>
-                                <div class="label-off"><div>off</div></div>
-                                
-                                <input type="radio" class="switch-input" name="switch4" value="on" id="on4">
-                                <label for="on4" class="switch-label-right switch-label-on" onclick="javascript:afficher_cacher('cache4');"><span>On</span></label>
-                                <div class="label-on"><div>on</div></div>
-
-                                <span class="switch-selection"></span>
-
-                            </div>
-                        </div>
 
                         <div id="cache4" class="cache4">
+
+							<div class="col-sm-6" id="bloc-image">
+                                <div id="information">
+                                    <h5>2017</h5>
+                                    <img alt="" src="img/separate.png" />
+                                    <h5>WES AMB</h5>
+                                </div>
+                                <div id="logoPortfolio">
+                                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/Cndk8MeYAOY" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                 <div id="textPortfolio">
+                                    <h4>Association Miage Bordeaux</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6" id="bloc-image">
+                                <div id="information">
+                                    <h5>2016</h5>
+                                    <img alt="" src="img/separate.png" />
+                                    <h5>Teaser AMB</h5>
+                                </div>
+                                <div id="logoPortfolio">
+                                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/eHKbjBBXvWs" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                 <div id="textPortfolio">
+                                    <h4>Association Miage Bordeaux</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6" id="bloc-image">
+                                <div id="information">
+                                    <h5>2015</h5>
+                                    <img alt="" src="img/separate.png" />
+                                    <h5>Blue Pearl advertising</h5>
+                                </div>
+                                <div id="logoPortfolio">
+                                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/XGrRLUHUErY" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                 <div id="textPortfolio">
+                                    <h4>Project L3 MIAGE</h4>
+                                </div>
+                            </div>
 
                             <div class="col-sm-6" id="bloc-image">
                                 <div id="information">
@@ -632,10 +557,10 @@
                                     <h5>FVPA</h5>
                                 </div>
                                 <div id="logoPortfolio">
-                                    <iframe width="100%" height="230px" src="https://www.youtube.com/embed/Jv32xqj6lVo" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/Jv32xqj6lVo" frameborder="0" allowfullscreen></iframe>
                                 </div>
                                  <div id="textPortfolio">
-                                        <h4>Association</h4>
+                                    <h4>E-sport competition website</h4>
                                 </div>
                             </div>
 
@@ -646,24 +571,10 @@
                                     <h5>FVPA france</h5>
                                 </div>
                                 <div id="logoPortfolio">
-                                    <iframe width="100%" height="230px" src="https://www.youtube.com/embed/wgv-s-as26w" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/wgv-s-as26w" frameborder="0" allowfullscreen></iframe>
                                 </div>
                                  <div id="textPortfolio">
-                                        <h4>World Cup</h4>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6" id="bloc-image">
-                                <div id="information">
-                                    <h5>2015</h5>
-                                    <img alt="" src="img/separate.png" />
-                                    <h5>OMage Web TV</h5>
-                                </div>
-                                <div id="logoPortfolio">
-                                    <iframe width="100%" height="230px" src="https://www.youtube.com/embed/EAbfsJZ9_2Y" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                 <div id="textPortfolio">
-                                        <h4>OMage</h4>
+                                    <h4>World Cup FIFA 2015</h4>
                                 </div>
                             </div>
 
@@ -674,19 +585,18 @@
                                     <h5>INRIA POTIOC</h5>
                                 </div>
                                 <div id="logoPortfolio">
-                                    <iframe width="100%" height="230px" src="https://www.youtube.com/embed/-CQGss8T4mk" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/-CQGss8T4mk" frameborder="0" allowfullscreen></iframe>
                                 </div>
                                  <div id="textPortfolio">
-                                        <h4>INRIA Team</h4>
+                                    <h4>INRIA Team</h4>
                                 </div>
                             </div>
 
                         </div>
 
-                        <script type="text/javascript">afficher_cacher('cache4');</script>
-
                     </div>             
                 </div>
+
             </section>
 
 <!-- PARTIE 3 -->
@@ -694,87 +604,65 @@
 
             <section id="hobbies">
 
-                            <div id="slider-video" class="carousel slide" data-ride="carousel">
-                       
-                                    <ol class="carousel-indicators">
-                                        <li class="active" data-slide-to="0" data-target="#slider-video"></li>
-                                        <li  class="" data-slide-to="1" data-target="#slider-video"></li>
-                                        <li  class="" data-slide-to="2" data-target="#slider-video"></li>
-                                    </ol>
+            	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner" role="listbox">
+				    <div class="carousel-item active">
+	            		<div id="square1">
+			                <h2>MUSIC</h2>
+			                <h3>I play guitar since I'm a teen, a lot of music styles influenced me through all periods of my life. I like singing and making karaoke with my friends.</h3>
+	            		</div>
+						<div id="video-container">
+							<video autoplay loop class="fillWidth">
+								<source type="video/ogv" src="./video/vocaluxe.mp4"/>
+								<source type="video/webm" src="./video/vocaluxe.webm"/>
+							</video>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+				      	<div id="square1">
+		                    <h2>SPORTS</h2>
+		                    <h3>I am really fan of sports, all kind, specially football (soccer) and Volleyball which I play since I was young. I also watch Rugby, Tennis, athletics, etc...</h3>
+		        		</div>
 
+						<div id="video-container">
+							<video autoplay loop class="fillWidth">
+								<source type="video/webm" src="./video/video-sport.webm"/>
+								<source type="video/mp4" src="./video/video-sport.mp4"/>	
+							</video>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+						<div id="square1">
+			                <h2>E-SPORT</h2>
+			                <h3>Playing is a good way to escape. I love being in competition, strategy is what I prefer to make !</h3>
+	            		</div>
 
-                                    <div id="test" class="carousel-inner" role="listbox">
-
-
-						            	<div class="item active">
-
-						            		<div id="square1" class="col-sm-1">
-								                    <h2>Music</h2>
-								                    <h3>I play guitar since I'm a teen, a lot of music styles influenced me through all periods of my life. I like singing and making karaoke with my friends.</h3>
-						            		</div>
-
-											<div id="video-container">
-												<video autoplay loop class="fillWidth">
-													<source type="video/ogv" src="./video/vocaluxe.mp4"/>
-													<source type="video/webm" src="./video/vocaluxe.webm"/>
-												</video>
-											</div>
-										</div>
-
-										<div class="item">
-
-											<div id="square1" class="col-sm-1">
-								                    <h2>Sports</h2>
-								                    <h3>I am really fan of sports, all kind, specially football (soccer) and Volleyball which I play since I was young. I also watch Rugby, Tennis, athletics, etc...</h3>
-						            		</div>
-
-											<div id="video-container">
-												<video autoplay loop class="fillWidth">
-													<source type="video/webm" src="./video/video-sport.webm"/>
-													<source type="video/mp4" src="./video/video-sport.mp4"/>	
-												</video>
-											</div>
-										</div>
-
-						            	<div class="item">
-
-						            		<div id="square1" class="col-sm-1">
-								                    <h2>Video games</h2>
-								                    <h3>Playing is a good way to escape. I love being in competition, strategy is what I prefer to make !</h3>
-						            		</div>
-
-											<div id="video-container">
-												<video autoplay loop class="fillWidth">
-													<source type="video/webm" src="./video/fvpa.webm"/>
-													<source type="video/mp4" src="./video/fvpa.mp4"/>	
-												</video>
-											</div>
-										</div>
-
-                                    </div>
-                                
-                                    <a class="left carousel-control" data-slide="prev" role="button" href="#slider-video">
-                                        <span class="fa fa-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    
-                                    <a class="right carousel-control" data-slide="next" role="button" href="#slider-video">
-                                        <span class="fa fa-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-
-                            </div>
-                            
+						<div id="video-container">
+							<video autoplay loop class="fillWidth">
+								<source type="video/webm" src="./video/fvpa.webm"/>
+								<source type="video/mp4" src="./video/fvpa.mp4"/>	
+							</video>
+						</div>
+				    </div>
+				  	</div>
+				  	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    	<span class="sr-only">Previous</span>
+				  	</a>
+				  	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    	<span class="sr-only">Next</span>
+				  	</a>
+				</div>
             </section>
 
             <section id="objective">
                 <div id="bloc-class" class="col-sm-12">
 
-                        <h1>Objective<h1>
-
+                        <h1>Objectives<h1>
                         <h2>Master’s degree in Business Informatics (MIAGE in French) - University of Bordeaux</h2>
-
-                        <h1>[WORK IN PROGRESS...]<h1>
+                        <h1>&<h1>
+                        <h2>FIFA Club Pro e-sport competition : <a href="http://www.e-scp.com/projet.escp/" >www.e-scp.com</a> [WORK IN PROGRESS...]<h2>
                 </div>
             </section>
 

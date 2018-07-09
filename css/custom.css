@@ -238,13 +238,12 @@ section {
     background: transparent url("../img/circles-light.png") fixed repeat 0% 0%;
 }
 
-#objective {
+#project {
     top: 0px;
     background-color: #E1E1E1;
-    height: 900px;
 }
 
-#objective h1{
+#project h1{
     color: #222;
     padding-top: 100px;
 }

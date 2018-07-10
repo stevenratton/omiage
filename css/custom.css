@@ -614,32 +614,6 @@ video.fillWidth{
 
 @media only screen and (max-width: 479px) {
   
-  #home {
-    display: none;
-  }
 
-  #navigation-sticky-wrapper {
-    display: none;
-  }
-
-  section {
-    display: none;
-  }
-
-  footer {
-    display: none;
-  }
-
-  #no-screen {
-    display: block;
-    width: 100%;
-  }
-
-  #no-screen p {
-    font-size: 14px;
-    margin: auto;
-    text-align: center;
-    padding-top: 20px;
-  }
 
 } 

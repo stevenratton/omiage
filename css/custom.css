@@ -244,7 +244,7 @@ section {
     padding-top: 100px;
 }
 
-#portfolio {
+.portfolio {
     width: 100%;
     color: #848080;
     border-top: 3px solid rgba(30,30,31,0.85);
@@ -253,14 +253,14 @@ section {
     margin: auto;
 }
 
-#portfolio h1{
+.portfolio h1{
     color: #000;
     margin-top: 100px;
     margin-bottom: 20px;
     width: 100%;
 }
 
-#portfolio h2{
+.portfolio h2{
     width: 100%;
     font-weight: 300;
     font-size: 2.0em;
@@ -291,9 +291,13 @@ section {
 .bloc-image:hover{   
     background: rgba(225,225,225,0.55);
     background: -moz-linear-gradient(bottom, rgba(225,225,225,0.55) 0%, rgba(246,246,246,0.35) 87%, rgba(237,237,237,0.05) 100%);
-
-
 }
+
+iframe {
+	width: 100%;
+	height: 80%;
+}
+
 
 
 /**** BOUTON ON-OFF ****/
@@ -559,7 +563,7 @@ section {
   margin: auto;
 }
 
-#square1{
+.square1{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -571,7 +575,7 @@ section {
   border: 2px solid #E1E1E1;
 }
 
-#square1:hover{
+.square1:hover{
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);

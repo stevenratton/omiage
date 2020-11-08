@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html id="homehtml">
         <head>
-            <meta name="description" content="Steven Ratton's personnel website">
+            <meta name="description" content="Steven Ratton's personal website">
             <meta name="author" content="Steven Ratton">
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
@@ -14,16 +14,19 @@
             <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 
             <!-- SCRIPT -->
-            <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-            <script src="./js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
             <script type="text/javascript" src="./js/afficher_cacher_div.js"></script>
 
             <!-- SCRIPT SCROLL CLIC-->
+
             <script>
                 $(document).ready(function() {
                     $('.scrollTo').click( function() { // Au clic sur un élément
                         var page = $(this).attr('href'); // Page cible
-                        var speed = 200; // Durée de l'animation (en ms)
+                        var speed = 750; // Durée de l'animation (en ms)
                         $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
                         return false;
                     });
@@ -33,7 +36,7 @@
             <script type='text/javascript'>
             $(function(){ 
                 $(window).scroll(function () {//Au scroll dans la fenetre on déclenche la fonction 
-                    if ($(this).scrollTop() > 1050) { //si on a défilé de plus de 1050px du haut vers le bas 
+                    if ($(this).scrollTop() > 1110) { //si on a défilé de plus de 1050px du haut vers le bas 
                         $('#navigation-sticky-wrapper').addClass("fixed"); 
                         $('#navigation').addClass("fixed");
                     } else { 
@@ -42,7 +45,6 @@
                     } 
                 }); 
             }); 
-
             </script>
 
             <title>Steven Ratton | Personal Website</title>
@@ -57,13 +59,14 @@
 
                 <h1>Steven <span class="text-color">Ratton</span></h1>
 
-                <p>Software designer<span class="bullet">•</span>Product Owner<span class="bullet">•</span>User eXperience<span class="bullet">•</span>Web Design<span class="bullet">•</span>Testing</p>
+                <p>Software designer<span class="bullet">•</span>Business Analyst<span class="bullet">•</span>User eXperience<span class="bullet">•</span>Web Design<span class="bullet">•</span>Testing</p>
 
                 <h2>Master's degree in Business Informatics</h2>
                 <h3>(MIAGE Bordeaux)</h3>
-                <img style="display: block; margin: auto;" src="./img/Scrumorg-PSPOI.png">
+                <img style="display: inline" src="./img/istqb.png" alt="Certification ISTQB Foundation" title="Certification ISTQB Foundation">
+                <img style="display: inline" src="./img/Scrumorg-PSPOI.png" alt="Certification Scrum PSPO" title="Certification Scrum PSPO">
 
-                <a href="#navigation-sticky-wrapper" class="newave-button large outline white">Tell me more</a>
+                <a href="#about" class="newave-button large outline white">Tell me more</a>
 
                 <div class="separate"></div>
 
@@ -94,32 +97,44 @@
 
                     <div id="presentation">
                         <p>
-                        Hi ! I'm Steven, a French designer passionate by User Experience and User Interface of product or service.
+                        Hi ! I'm Steven, a French Business Analyst passionate by User Experience and User Interface.
                         </p>
-                        <p>
-                        After making a French Master's Programme with a major in Business and a minor in Informatics <a target="_blank" href="https://miage-bordeaux.fr/">MIAGE (University of Bordeaux)</a> in work study contract. I'm working now at <a target="_blank" href="http://www.sqli.com/">SQLI</a> where I practice software design in an Agile Scrum team.<br>
+                        <p> 
                         In 2014, I worked in <a target="_blank" href="http://en.wikipedia.org/wiki/French_Institute_for_Research_in_Computer_Science_and_Automation">French National Institute for computer science and applied mathematics (INRIA)</a> with a research team name <a href="https://team.inria.fr/potioc/">POTIOC</a> and created new logo's team and worked on dice game in augmented reality.
+
+                        After making a French Master's Programme with a major in Business and a minor in Informatics <a target="_blank" href="https://miage-bordeaux.fr/">MIAGE (University of Bordeaux)</a> in work study contract.<br>
+                        Today, I'm working at <a target="_blank" href="http://www.sqli.com/">SQLI</a> where I functionally design an application by analyzing user needs before proposing better solutions with user experience improvement. UX vision from pre-sale to the end of the project lifecycle :<br> 
+                        Customer's need understanding <a>/</a> Project scope <a>/</a> Business analyse <a>/</a> Project life cycle management (Detailed Functional Specification) <a>/</a> Elicitation <a>/</a> Functional conception (Specification by example) <a>/</a> Evaluation (Software quality) <a>/</a> User formation.
                         </p>
+
+						<img style="display: inline; margin: auto; margin-left: 10%; width: 12%; min-width: 
+						" src="./img/mdlm.png" alt="logo Ministère de la mer" title="logo Ministère de la mer">
+                        <img style="display: inline; margin: auto; margin-left: 10%; width: 12%; min-width: 11%" src="./img/rte.png" alt="logo RTE" title="logo RTE">
+                        <img style="display: inline; margin: auto; margin-left: 10%; width: 12%; min-width: 11%" src="./img/bmw.png" alt="logo RTE" title="logo BMW">
+                		<img style="display: inline; margin: auto; margin-left: 10%; width: 12%; min-width: 11%" src="./img/chanel.png" alt="logo RTE" title="logo CHANEL">
+                		
+                		<div class="separate"></div>
+
                         <p>
-                        Today, I have the desire to learn !
+                        My experience allows me to say today that our profession Business Analyst is essential to project success. Setting project scope together is necessary to build a solution with users, for users.
                     	</p>
                         <p>
-                        E-sport is growing and I participated in many e-sport adventures since my childhood (<a href="http://www.millenium.org/">Millenium</a>, <a href="http://cooldown.fr/">Cooldown</a>, ...). I like helping e-sport project to see the day because I'm convinced that the Esport market is an interesting business today !
+                        E-sport is growing and I participated in many e-sport adventures since my childhood (<a href="http://www.millenium.org/">Millenium</a>, <a href="http://cooldown.fr/">Cooldown</a>, ...). I like helping e-sport project to see the day because I'm convinced that the e-sport market is an interesting business today !
                         </p>
                         <p>
-                        You can look at some of my works on my <a target="_blank" href="#portfolio">Portfolio</a>. My resume is available and I'm also on <a target="_blank" href="https://fr.linkedin.com/pub/steven-ratton/66/915/a82">LinkedIn</a>.
+                        You can look at some of my works on my <a target="_blank" href="#folio">Portfolio</a>. My resume is available and I'm also on <a target="_blank" href="https://fr.linkedin.com/pub/steven-ratton/66/915/a82">LinkedIn</a>.
                         </p>
                         <p>
                         Feel free to contact me,
                         </p>
                     </div> 
 
-                    <div id="cv">
+                    <div id="middler">
                         <p>
-                        - OR -
+                        - CV -
                         </p>
-						<a class="newave-button medium grey " href="./img/CV_FR_RATTON_Steven.pdf" target="_blank">Download my French CV</a>
-                        <a class="newave-button medium grey " href="./img/CV_EN_RATTON_Steven.pdf" target="_blank">Download my English CV</a>
+						<a class="newave-button medium grey " href="./img/CV_FR_RATTON_Steven.pdf" target="_blank">Download my<br> French CV</a>
+                        <a class="newave-button medium grey " href="./img/CV_EN_RATTON_Steven.pdf" target="_blank">Download my<br> English CV</a>
                     </div> 
                     
                 </div>
@@ -135,6 +150,34 @@
                     <h2>Gaming Logos</h2>
 
                     <div id="cache1" class="cache1">
+
+                    	<div class="col-sm-6 bloc-image">
+                            <div class="information">
+                                <h5>2020</h5>
+                                <img alt="" src="img/separate.png" />
+                                <h5>Ascension</h5>
+                            </div>
+                            <div class="logoPortfolio">
+                                <img alt="" src="./img/ascension.png" />
+                            </div>
+                            <div class="textPortfolio">
+                                    <h4>E-sport Team</h4>
+                            </div>
+                        </div>
+
+                    	<div class="col-sm-6 bloc-image">
+                            <div class="information">
+                                <h5>2019</h5>
+                                <img alt="" src="img/separate.png" />
+                                <h5>FC Revolution</h5>
+                            </div>
+                            <div class="logoPortfolio">
+                                <img alt="" src="./img/fcr.png" />
+                            </div>
+                            <div class="textPortfolio">
+                                    <h4>E-sport Team</h4>
+                            </div>
+                        </div>
 
                     	<div class="col-sm-6 bloc-image">
                             <div class="information">
@@ -657,7 +700,7 @@
 
                         <h1>Project</h1>
                         <iframe src="https://www.youtube.com/embed/WKgqFgbKYI8?rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        <h2>FIFA Club Pro e-sport competition : <a href="http://www.e-scp.com/projet.escp/" >www.e-scp.com</a> [WORK IN PROGRESS...]</h2>
+                        <h2>FIFA Club Pro e-sport competition : <a href="http://www.e-scp.com/" >www.e-scp.com</a></h2>
                        	
                        	<img alt="maquette" src="./img/maquette.png" style="width:70%;" />
 
@@ -665,7 +708,7 @@
             </section>
 
             <footer>
-                <p>Copyright &copy; 2015-2019 &middot; All Rights Reserved &middot; <a href="http://stevenratton.com/" >Steven Ratton</a></p>
+                <p>Copyright &copy; 2015-2020 &middot; All Rights Reserved &middot; <a href="http://stevenratton.com/" >Steven Ratton</a></p>
             </footer>
         </body>
 

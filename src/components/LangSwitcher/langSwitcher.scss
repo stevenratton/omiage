@@ -1,0 +1,64 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import 'src/styles/variables';
+
+.lang-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 1%;
+  margin-top: 1rem; /* Ensure it has some margin from the top for better alignment */
+
+  button {
+    position: relative;
+    background: none;
+    border: none;
+    color: $main-text-color;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 1.5rem; /* Add padding to make space for the round indicator */
+    margin: 0;
+
+    &.selected {
+      color: $main-blue;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.75rem; /* Size of the round indicator */
+      height: 0.75rem; /* Size of the round indicator */
+      border-radius: 50%;
+      background: $main-blue;
+      opacity: 0; /* Hide the round indicator by default */
+      transition: opacity 0.3s ease;
+    }
+
+    &.selected::before {
+      opacity: 1; /* Show the round indicator when selected */
+    }
+  }
+
+  span {
+    color: $main-text-color;
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lang-btn {
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .lang-btn {
+    button {
+      font-size: 0.875rem;
+    }
+  }
+}

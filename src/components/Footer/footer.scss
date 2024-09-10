@@ -1,0 +1,25 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import 'src/styles/variables';
+
+#footer {
+  color: $main-text-color;
+  position: relative;
+  z-index: 10;
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .footer-logo{
+    width: 25%;
+    }
+
+    .footer-logo2 {
+        width: 25%;
+        transform: scale(0.5);
+        cursor: pointer;
+    }
+    }
+}

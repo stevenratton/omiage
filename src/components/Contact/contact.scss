@@ -1,0 +1,403 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import 'src/styles/variables';
+
+#contact {
+  margin-top: 10%;
+  position: relative;
+  z-index: 10;
+  margin-left: 6%;
+}
+
+.needs-head {
+  position: absolute;
+  top: 50px;
+  left: 16%;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 2%;
+
+  @media (max-width: 480px) {
+    left: 19%;
+    font-size: 18px;
+    margin-top: 2%;
+    width: 100vh;
+  }
+}
+
+.button-container2 {
+  right: 2%;
+  position: absolute;
+  top: 30%;
+  left: 102%;
+  width: 60%;
+
+  @media (max-width: 480px) {
+    top: 35%;
+    width: 30%;
+  }
+}
+
+.buttontext {
+  border: 3px solid transparent;
+  background-image:
+    linear-gradient(#1E1E1E, #1E1E1E),
+    linear-gradient(45deg, #0068ff, #a055fa, #73e176, #2190ed, #00cee4, #00bbe2, #9fadc7, #9756fa, #0068fe);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 50px;
+  padding: 3%;
+  gap: 10px;
+  cursor: pointer;
+
+  @media (max-width: 480px) {
+    padding: 6%;
+    border-radius: 50px;
+  }
+}
+
+/* WISHLIST */
+.checklist-container {
+  display: flex;
+  justify-content: center;
+  width: 160vh;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 1%;
+
+  @media (max-width: 1400px) {
+    margin-top: 6%;
+    width: 140vh;
+  }
+
+  @media (max-width: 1280px) {
+    margin-top: 6%;
+    width: 140vh;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 30%;
+    width: 150vh;
+  }
+}
+
+.checklist {
+  align-items: center;
+  background-color: $bg-body;
+  border: 4px solid transparent;
+  border-radius: 50px;
+  background-image:
+    linear-gradient(#1E1E1E, #1E1E1E),
+    linear-gradient(45deg, #0068ff, #a055fa, #73e176, #2190ed, #00cee4, #00bbe2, #9fadc7, #9756fa, #0068fe);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 2% 2.5%;
+  width: 65%;
+  margin: 2%;
+
+  @media (max-width: 480px) {
+    padding: 4% 5%;
+    margin-left: -4%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  label {
+    font-size: 16px;
+    font-family: $main-font;
+  }
+}
+
+.option {
+  display: flex;
+  position: relative;
+  padding-left: 16%;
+  cursor: pointer;
+  margin: 2%;
+  top: 1.7%;
+
+  @media (max-width: 480px) {
+    margin: 1%;
+  }
+}
+
+/* Masquer la vraie checkbox */
+.option .button {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Créer la case à cocher personnalisée */
+.option .button+label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -12%;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-image:
+    linear-gradient($bg-body, $bg-body),
+    linear-gradient(45deg, #0068ff, #a055fa, #73e176, #2190ed, #00cee4, #00bbe2, #9fadc7, #9756fa, #0068fe);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: 1px solid transparent;
+}
+
+/* Styles pour la case cochée */
+.option .button:checked+label::before {
+  background-image:
+    linear-gradient($bg-body, $bg-body),
+    linear-gradient(45deg, #0068ff, #a055fa, #73e176, #2190ed, #00cee4, #00bbe2, #9fadc7, #9756fa, #0068fe);
+}
+
+/* Ajout de la coche */
+.option .button:checked+label::after {
+  content: '';
+  position: absolute;
+  left: 1.4%;
+  top: 1%;
+  width: 1.5%;
+  height: 10px;
+  border: solid $main-text-color;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* BTN WISHLIST */
+.buttonwish-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+  margin-right: 4%;
+}
+
+.buttonwish {
+  display: flex;
+  align-items: center;
+  background: $bg-body;
+  border-radius: 50px;
+  padding: 1.1% 1.3%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(#1E1E1E, #1E1E1E),
+    linear-gradient(45deg, #0068ff, #a055fa, #73e176, #2190ed, #00cee4, #00bbe2, #9fadc7, #9756fa, #0068fe);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  @media (max-width: 480px) {
+    padding: 4% 6%;
+    margin-left: 90vh;
+  }
+}
+
+.buttonwish.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.icon1 {
+  margin-right: 0.7rem;
+}
+
+.icon2 {
+  margin-left: 0.3rem;
+  margin-top: 3%;
+}
+
+/* GRAPHIQUE */
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  border: 4px solid transparent;
+  border-radius: 50px;
+  background-image:
+    linear-gradient(#1E1E1E, #1E1E1E),
+    linear-gradient(45deg, #0068ff, #a055fa, #73e176, #2190ed, #00cee4, #00bbe2, #9fadc7, #9756fa, #0068fe);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 2%;
+  box-sizing: border-box;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 3%;
+}
+
+.chart-wishlist {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-labels-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.label-chart {
+  text-align: center;
+
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+
+.form-container {
+  width: 45%;
+}
+
+.form-group label {
+  display: flex;
+  margin-top: 6%;
+  margin-bottom: 2%;
+  font-size: 16px;
+  font-family: $main-font;
+}
+
+.form-group input {
+  border: 1px solid $main-blue;
+  background-color: $bg-body;
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  padding: 3%;
+  color: $main-text-color;
+  font: $main-font;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  border: 1px solid $main-blue;
+  background-color: $bg-body;
+  border-radius: 5px;
+  width: 100%;
+  height: 80px;
+  padding: 3%;
+  color: $main-text-color;
+  font: $main-font;
+  font-size: 16px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: $main-text-color;
+  font-family: $main-font;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.submit {
+  color: $main-text-color;
+  font-family: $main-font;
+  font-size: 16px;
+  width: 60%;
+  padding: 4%;
+  margin-top: 4%;
+  margin-left: 26%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  background: $bg-body;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient($bg-body, $bg-body),
+    linear-gradient(45deg, #0068ff, #a055fa, #73e176, #2190ed, #00cee4, #00bbe2, #9fadc7, #9756fa, #0068fe);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.arrow-container-restart {
+  position: absolute;
+  top : 0;
+  left: 1%;
+  padding: 2%;
+}
+
+.restart-button {
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: 'Back to wishlist'; // Texte par défaut
+    position: absolute;
+    top : -120%;
+    left: 100%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: $main-text-color;
+    padding: 1%;
+    border-radius: 3px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+}
+
+.restart-button.en::after {
+  content: 'Back to wishlist';
+}
+
+.restart-button.fr::after {
+  content: 'Retourner à la liste';
+}
+
+.arrow-container-restart:hover .restart-button::after {
+  opacity: 1;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: $header-title;
+  font-size: $header-size;
+}
+
+.highest-job {
+  position: absolute;
+  top: 50px;
+  left: 30%;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 2%;
+}
